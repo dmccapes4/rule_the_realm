@@ -9,8 +9,8 @@ setting.
 
 Players start with a small human settlement in different corners of a hex tile map, and take turns buying and
 moving units in an attempt to capture the other players starting bases. Players begin with 3 gold and a total of 6
-available units: 2 archers, 2 spearmen and 2 swordsmen that each cost 1 gold. Their starting tile produces 1 gold
-each turn and is treated like a village for the purposes of upgrading it as a settlement.
+available units: 2 archers, 2 spearmen and 2 swordsmen that each cost 1 gold. The starting tile is treated like a 
+village for the purposes of gold production and upgrading it as a settlement.
 
 **`tiles`**
 
@@ -26,11 +26,16 @@ against more 2-4 units of that race depending on the size of the player's larges
 The last tile type is the mercenary camp. This tile cannot be conquered, but may be passed through freely and players
 can purchase units from it.
 
+The center tile is always impassable.
+
+The 2 player version contains 10 meadows, 9 woods, 9 hills, 2 mercenary camps, 2 orc longhouses, 2 dwarf strongholds
+and 2 elf citadels
+
 **`units`**
 
 Units are bought at settlements or mercenary camps and have 4 battle statistics: attack, defense, range and speed.
-Attack and defense represent the number of mod 3 die that a player can roll to determine an attack or defense score
-for a round of combat against an opposing unit's attack or defense score.
+Attack and defense represent the random range of the attack or defense score for a round of combat against an 
+opposing unit's attack or defense score.
 
 The three basic units are the archer, swordsman and spearman:
 * archer: attack: 3, defense: 1, range: 2, speed: 1
@@ -57,11 +62,51 @@ one attribute: attack or defense to improve. When this is improved the character
 `village`
 
 **settlement size: 1**
-Villages can be built on **meadows** tiles for 3 gold. They have 3 available units: an archer, a swordsman and a spearman. Villages produce 1 gold per turn. Players can build up to three villages. 
+
+Villages can be built on **meadows** tiles for 3 gold. They have 3 available units: an archer, a swordsman and a spearman
+Villages produce mod 3 gold per turn. Players can build up to 3 villages and begin with starting settlement treated as an
+additional village. Villages have a radius of 2.
 
 `town`
 
-Villages can be upgraded to towns for 4 gold. Towns gain 2 additional units: an archer and a spearman.
+**settlement size: 2**
+
+Villages can be upgraded to towns for 4 gold. Towns gain 2 additional units: an archer and a spearman. Towns produce mod 5 
+gold per turn. Players can upgrade up to 3 villages.
+
+`city`
+
+**settlement size: 3**
+
+Towns can be upgraded to cities for 5 gold. Cities gain 1 additional unit: a swordsman. Cities produce mod 7 gold per turn.
+Players can upgrade up to 2 towns.
+
+**`other tiles`**
+
+`mercenary camp`
+
+There are 2 mercenary camps. Mercenary camps have 2 available units:
+* ranger: attack: 5, defense: 2, range: 3, speed: 1, cost: 3
+* knight: attack: 5, defense: 7, range: 0, speed: 2, cost: 3
+
+
+`orc longhouse`
+
+There are 2 orc longhouses. Orc longhouses have 4 available units:
+* 2 spear-orc: attack: 5, defense: 5, range: 1, cost: 2
+* 2 axe-orc: attack: 7, defense: 5, range: 0, cost: 2
+
+`dwarf stronghold`
+
+There are 2 dwarf strongholds. Dwarf strongholds have 4 available units:
+* 2 arbalest: attack: 4, defense: 4, range: 2, cost: 2
+* 2 shield-dwarf: attack: 4, defense: 8, range: 0, cost: 2
+
+`elf citadel`
+
+There are 2 elf citadels. Elf citadels have 4 available units:
+* 2 ranger: attack: 5, defense: 1, range: 3, speed: 1, cost: 2
+* 2 sword-elf: attack: 6, defense: 6, range: 0, speed: 1, cost: 2
 
 
 
