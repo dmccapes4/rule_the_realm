@@ -115,5 +115,18 @@ to 2 units on their back row each turn. Each unit can do 2 actions per turn. Eac
 attack. A player wins when the opposing player has no more units on the tile, or flees with his undeployed units.
 Players cannot flee until all of their deployed units are killed.
 
+### MVPs
 
+* Buy and move units
+* Build and upgrade settlements
+* Facilitate battle
+* Conquer unowned tiles with random encounters
+* Conquer bases of other races and purchase units from them
+* Purchase units from mercenary camp
+* Competent AI
 
+**`bonus`**
+
+* Upgrade settlements with buildings
+* Additional unit types
+* Additional races
