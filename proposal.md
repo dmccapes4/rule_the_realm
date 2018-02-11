@@ -108,8 +108,12 @@ There are 2 elf citadels. Elf citadels have 4 available units:
 * 2 ranger: attack: 5, defense: 1, range: 3, speed: 1, cost: 2
 * 2 sword-elf: attack: 6, defense: 6, range: 0, speed: 1, cost: 2
 
+**`battles`**
 
-
+Battles take place on a 37 tile hex grid with opposing units being placed on opposite ends. Players may place up
+to 2 units on their back row each turn. Each unit can do 2 actions per turn. Each action can be either to move or
+attack. A player wins when the opposing player has no more units on the tile, or flees with his undeployed units.
+Players cannot flee until all of their deployed units are killed.
 
 
 
