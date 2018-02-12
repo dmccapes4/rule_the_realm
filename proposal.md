@@ -94,17 +94,17 @@ Players cannot flee until all of their deployed units are killed.
 
 ### MVPs
 
--[] Buy and move units
--[] Facilitate battle
--[] Level up units
--[] Conquer unowned tiles with random encounters
--[] Conquer settlements of other races and purchase units from them
--[] Purchase units from mercenary camp
--[] Competent AI
+- [] Buy and move units
+- [] Facilitate battle
+- [] Level up units
+- [] Conquer unowned tiles with random encounters
+- [] Conquer settlements of other races and purchase units from them
+- [] Purchase units from mercenary camp
+- [] Competent AI
 
 **`bonus`**
 
--[] Build and upgrade settlements
--[] Upgrade settlements with buildings
--[] Additional unit types
--[] Additional races
+- [] Build and upgrade settlements
+- [] Upgrade settlements with buildings
+- [] Additional unit types
+- [] Additional races
