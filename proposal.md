@@ -115,10 +115,13 @@ The game will consist of two primary screens: the world board and the battle boa
 view of the 37 tile world map and will allow player to buy and move units throughout the map. 
 
 World Board:
+
 ![world-board](https://user-images.githubusercontent.com/32603834/36103950-91c2dd82-0fc5-11e8-8cfb-d618a3507108.jpg)
 
 When player's select buy units the hex map wil be replaced with a list of the available units on the tile they
 selected:
+
+Buy Unit Screen:
 
 ![world-board 2](https://user-images.githubusercontent.com/32603834/36104562-3674d1cc-0fc7-11e8-8992-f848e7e7cbec.jpg)
 
@@ -130,6 +133,74 @@ and attack enemy units.
 
 
 Battle Board:
+
 ![world-board 1](https://user-images.githubusercontent.com/32603834/36104120-f9a68304-0fc5-11e8-86fd-1cf76e7b7af1.jpg)
 
 
+### Architecture
+
+* Vanilla Javascript for game logic
+* HTML 5 for rendering
+* Webpack to bundle scripts
+
+`tile.js`
+
+This is where the Tile class will be created. Tiles will have x and y coordinates as well as attributes depending on the
+random tile type that is assigned at the beginning of the game.
+
+`unit.js`
+
+This is where the Unit class will be created. Units will have attibutes such as attack and defense that can be upgraded.
+Units are able to move around the world board as well as fight on the battle board.
+
+`player.js`
+
+This is where the Player class will be created. Players will own tiles, units and gold, and will perform actions to 
+manipulate them. Players can win by capturing the opposing player's home base.
+
+`ai_player.js`
+
+This is where the AiPlayer class will be created. AiPlayers will function like Players only their actions will be automated.
+
+`world_board.js`
+
+This is where the WorldBoard class will be created. The WorldBoard will contain 37 tiles that are shuffled and randomly
+placed at the beginning of the game. It will then monitor the movement of units and initiate battles when necessary. It will
+also have a render function.
+
+`battle_board.js`
+
+This is where the BattleBoard class will be created. The BattleBoard will contain 37 blank tiles that can be occupied by
+units. It will monitor the units movements and actions to determine when units are destroyed and determine a victor. It will
+also have a render function.
+
+`game.js`
+
+This is where the Game class will be created. The Game class will handle the game logic of switching between the world board
+and battle board, switching players and rendering to the canvas.
+
+### Implementation Timeline
+
+**Day 1**
+- [ ] Write Tile and WorldBoard classes
+- [ ] Render WorldBoard to screen
+
+**Day 2**
+- [ ] Write Unit and BattleBoard classes
+- [ ] Buy and move units on WorldBoard
+- [ ] Move and attack with units on BattleBoard
+
+**Day 3**
+- [ ] Write Player, Game and AIPlayer class
+- [ ] Be able to play game
+
+**Day 4**
+- [ ] Add sound and animation to BattleBoard
+- [ ] Add artwork to WorldBoard and BattleBoard
+
+### Bonus Features
+
+- [ ] Add ability to build and upgrade settlements
+- [ ] Expand to 61 tile, 4 player WorldBoard
+- [ ] Add more races
+- [ ] Add more units
