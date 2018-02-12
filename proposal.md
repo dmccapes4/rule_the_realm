@@ -108,3 +108,28 @@ Players cannot flee until all of their deployed units are killed.
 - [ ] Upgrade settlements with buildings
 - [ ] Additional unit types
 - [ ] Additional races
+
+### Wireframes
+
+The game will consist of two primary screens: the world board and the battle board. The world board will be a
+view of the 37 tile world map and will allow player to buy and move units throughout the map. 
+
+World Board:
+![world-board](https://user-images.githubusercontent.com/32603834/36103950-91c2dd82-0fc5-11e8-8cfb-d618a3507108.jpg)
+
+When player's select buy units the hex map wil be replaced with a list of the available units on the tile they
+selected:
+
+![world-board 2](https://user-images.githubusercontent.com/32603834/36104562-3674d1cc-0fc7-11e8-8992-f848e7e7cbec.jpg)
+
+
+
+When the players
+encounter enemies they will switch to the also 37 tile battle board where they will be able to deploy units
+and attack enemy units.
+
+
+Battle Board:
+![world-board 1](https://user-images.githubusercontent.com/32603834/36104120-f9a68304-0fc5-11e8-86fd-1cf76e7b7af1.jpg)
+
+
