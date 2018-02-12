@@ -9,8 +9,7 @@ setting.
 
 Players start with a small human settlement in different corners of a hex tile map, and take turns buying and
 moving units in an attempt to capture the other players starting bases. Players begin with 3 gold and a total of 6
-available units: 2 archers, 2 spearmen and 2 swordsmen that each cost 1 gold. The starting tile is treated like a 
-village for the purposes of gold production and upgrading it as a settlement.
+available units: 2 archers, 2 spearmen and 2 swordsmen that each cost 1 gold.
 
 **`tiles`**
 
@@ -42,11 +41,13 @@ The three basic units are the archer, swordsman and spearman:
 * swordsman: attack: 3, defense: 5, range: 0, speed: 1
 * spearman: attack: 3, defense: 3, range: 1, speed: 1
 
-If an archer were to attack a swordsman, it would get one mod 3 attack to against the swordsman's mod 5
+If an archer were to attack a swordsman, it would get one [0-3] attack to against the swordsman's [0-5]
 defense. If the archer's score beats the swordsman's score,the swordsman dies and the archer is able to level up
 after the combat.
 
-In this case the archer, with a mod 1 defense
+
+
+In this case the archer, with a 1 defense would
 
 It's possible to attack one enemy unit with multiple units. For intstance, a swordsman, spearman and archer could all
 attack the same unit scoring a total of 3 mod 3 attack. If the attack beats the succeeds the player may select one of
@@ -58,30 +59,6 @@ When a unit is involved in killing an opposing unit it is able to level up. When
 one attribute: attack or defense to improve. When this is improved the character increases their attibute by 1.
 
 **`settlements`**
-
-`village`
-
-**settlement size: 1**
-
-Villages can be built on **meadows** tiles for 3 gold. They have 3 available units: an archer, a swordsman and a spearman
-Villages produce mod 3 gold per turn. Players can build up to 3 villages and begin with starting settlement treated as an
-additional village. Villages have a radius of 2.
-
-`town`
-
-**settlement size: 2**
-
-Villages can be upgraded to towns for 4 gold. Towns gain 2 additional units: an archer and a spearman. Towns produce mod 5 
-gold per turn. Players can upgrade up to 3 villages.
-
-`city`
-
-**settlement size: 3**
-
-Towns can be upgraded to cities for 5 gold. Cities gain 1 additional unit: a swordsman. Cities produce mod 7 gold per turn.
-Players can upgrade up to 2 towns.
-
-**`other tiles`**
 
 `mercenary camp`
 
@@ -117,16 +94,17 @@ Players cannot flee until all of their deployed units are killed.
 
 ### MVPs
 
-* Buy and move units
-* Build and upgrade settlements
-* Facilitate battle
-* Conquer unowned tiles with random encounters
-* Conquer bases of other races and purchase units from them
-* Purchase units from mercenary camp
-* Competent AI
+-[] Buy and move units
+-[] Facilitate battle
+-[] Level up units
+-[] Conquer unowned tiles with random encounters
+-[] Conquer settlements of other races and purchase units from them
+-[] Purchase units from mercenary camp
+-[] Competent AI
 
 **`bonus`**
 
-* Upgrade settlements with buildings
-* Additional unit types
-* Additional races
+-[] Build and upgrade settlements
+-[] Upgrade settlements with buildings
+-[] Additional unit types
+-[] Additional races
