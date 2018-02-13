@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  font-family: fantasy;
+}
+
+.action-prompt {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 25px;
+}
+
+.left-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 600px;
+  background: lightgreen;
+}
+
+.left-bar-btn {
+  width: 125px;
+  height: 50px;
+  background: blue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: fantasy;
+  font-size: 18px;
+  margin: 50px;
+}
+
+.left-bar-btn:hover {
+  border: 3px solid red;
+}
+
+.title {
+  width: 600px;
+  height: 25px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#main {
+  height: 600px;
+  width: 600px;
+}
+
+/* #canvas {
+  width: 600px;
+  height: 600px;
+} */
