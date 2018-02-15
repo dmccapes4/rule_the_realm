@@ -86,7 +86,6 @@ body {
   border-radius: 5px;
 }
 
-/* #canvas {
-  width: 600px;
-  height: 600px;
-} */
+#canvas2 {
+  /* display: none; */
+}
