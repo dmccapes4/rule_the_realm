@@ -7,8 +7,8 @@
   <body>
     <section class="left-bar">
       <p class="action-prompt">Choose an Action</p>
-      <button class="left-bar-btn">Buy Units</button>
-      <button class="left-bar-btn">Move Units</button>
+      <button id="buy" class="left-bar-btn">-</button>
+      <button id="move" class="left-bar-btn">-</button>
     </section>
     <section id="main">
       <p class="title">Rule the Realm</p>
@@ -16,13 +16,14 @@
     </section>
     <section class="right-bar">
       <section class="info">
-        <p id="tile-type" />
-        <p id="tile-may-build" />
-        <p id="tile-may-purchase" />
-        <p id="tile-encounter-chance" />
-        <p id="tile-difficult-terrain" />
+        <p id="prompt"/>
+        <section class="option-btn" id="option0">-</section>
+        <section class="option-btn" id="option1">-</section>
+        <section class="option-btn" id="option2">-</section>
+        <section class="option-btn" id="option3">-</section>
+        <section class="option-btn" id="option4">-</section>
+        <section class="option-btn" id="option5">-</section>
       </section>
-      <canvas id="canvas2" />
     </section>
     <script type="application/javascript" src="lib/bundle.js"></script>
   </body>
