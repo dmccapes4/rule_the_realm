@@ -105,15 +105,31 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 180px;
   background: white;
   opacity: 0.5;
   border-radius: 5px;
 }
 
+#prompt {
+  margin-left: 15px;
+}
+
 #list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#list li {
+  float: left;
+}
+
+#list li:hover {
+  font-weight: 650;
+  cursor: pointer;
 }
 
 #canvas2 {
