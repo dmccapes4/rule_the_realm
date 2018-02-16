@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://res.cloudinary.com/mccapes-construction/image/upload/v1518736774/dungeon-background_hdkgey.jpg");
+  background-image: url("https://res.cloudinary.com/mccapes-construction/image/upload/v1518748565/wood-background_rf1rjz.jpg");
 }
 
 .content {
@@ -112,13 +112,8 @@ body {
   border-radius: 5px;
 }
 
-.option-btn {
-  width: 120px;
-  height: 35px;
-}
-
-.option-btn:hover {
-  cursor: pointer;
+#list {
+  list-style: none;
 }
 
 #canvas2 {
