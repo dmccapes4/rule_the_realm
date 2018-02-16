@@ -5,24 +5,49 @@
   </head>
 
   <body>
-    <section class="left-bar">
-      <p class="action-prompt">Choose an Action</p>
-      <button id="buy" class="left-bar-btn">-</button>
-      <button id="move" class="left-bar-btn">-</button>
-    </section>
-    <section id="main">
-      <p class="title">Rule the Realm</p>
-      <canvas id="canvas" />
-    </section>
-    <section class="right-bar">
-      <section class="info">
-        <p id="prompt"/>
-        <section class="option-btn" id="option0">-</section>
-        <section class="option-btn" id="option1">-</section>
-        <section class="option-btn" id="option2">-</section>
-        <section class="option-btn" id="option3">-</section>
-        <section class="option-btn" id="option4">-</section>
-        <section class="option-btn" id="option5">-</section>
+    <section class="content">
+      <section id="modal" class="modal">
+        <h2>Rule the Realm</h2>
+        <p>
+          Rule the Realm is a turn based strategy game in which players
+          raise earn gold to raise armies and conquer the map! Players
+          begin with 2 gold and earn 1 gold per turn plus an additional
+          gold for every 5 tiles they own. They can use this gold to
+          purchase units. As units explore the map they encounter enemies.
+          When enemies are encountered the game goes into battle mode
+          where units are deployed onto a new hex grid against enemy units.
+          Units that survive the battle and participated in killing
+          enemies are able to level up and increase either their attack
+          or defense. However, even high level units are vulnerable
+          because attack and defense scores represent a range between 0
+          and that score which means that a new unit always has a chance
+          to kill a high powered unit. Units will also encounter other
+          races. If a player captures the base of another race they can
+          use it to recruit troops of that race. Rule the Realm is a game
+          of luck and strategy! Will you be able to raise an army and
+          conquer the realm?
+        </p>
+      </section>
+      <section class="left-bar">
+        <p class="action-prompt">Choose an Action</p>
+        <button id="buy" class="left-bar-btn">-</button>
+        <button id="move" class="left-bar-btn">-</button>
+      </section>
+      <section id="main">
+        <p class="title">Rule the Realm</p>
+        <canvas id="canvas" />
+        <canvas id="canvas2" />
+      </section>
+      <section class="right-bar">
+        <section class="info">
+          <p id="prompt"/>
+          <section class="option-btn" id="option0">-</section>
+          <section class="option-btn" id="option1">-</section>
+          <section class="option-btn" id="option2">-</section>
+          <section class="option-btn" id="option3">-</section>
+          <section class="option-btn" id="option4">-</section>
+          <section class="option-btn" id="option5">-</section>
+        </section>
       </section>
     </section>
     <script type="application/javascript" src="lib/bundle.js"></script>
