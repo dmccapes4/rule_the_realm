@@ -118,18 +118,18 @@ body {
   margin-left: 15px;
 }
 
-#list {
+.list {
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-#list li {
+.list li {
   float: left;
 }
 
-#list li:hover {
+.list li:hover {
   font-weight: 650;
   cursor: pointer;
 }
