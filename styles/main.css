@@ -1,0 +1,142 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://res.cloudinary.com/mccapes-construction/image/upload/v1518748565/wood-background_rf1rjz.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  font-family: fantasy;
+  border: 10px solid black;
+  height: 500px;
+  width: 900px;
+}
+
+.modal {
+  position: absolute;
+  background: white;
+  height: 400px;
+  width: 600px;
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+  padding: 20px;
+  z-index: 5;
+  border-radius: 10px;
+}
+
+.close {
+  display: none;
+  z-index: 0;
+}
+
+.action-prompt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 175px;
+  background: blue;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 25px;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+
+.left-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 500px;
+  background: url("https://res.cloudinary.com/mccapes-construction/image/upload/v1518574537/texture_ocx2bg.jpg");
+  background-size: 100px 100px;
+}
+
+.left-bar-btn {
+  width: 125px;
+  height: 50px;
+  background: blue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: fantasy;
+  font-size: 18px;
+  margin: 50px;
+}
+
+.left-bar-btn:hover {
+  border: 3px solid red;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  background: white;
+}
+
+#main {
+  height: 500px;
+  width: 500px;
+  background: url("https://res.cloudinary.com/mccapes-construction/image/upload/v1518574911/dirt_c6xgdn.jpg");
+  background-size: 100px 100px;
+}
+
+.right-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 500px;
+  background: url("https://res.cloudinary.com/mccapes-construction/image/upload/v1518574537/texture_ocx2bg.jpg");
+  background-size: 100px 100px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 180px;
+  background: white;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+
+#prompt {
+  margin-left: 15px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.list li {
+  float: left;
+}
+
+.list li:hover {
+  font-weight: 650;
+  cursor: pointer;
+}
+
+#canvas2 {
+  height: 500px;
+  width: 500px;
+  display: none;
+  position: relative;
+}
